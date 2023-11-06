@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,0,-1,4,5,7,9];
+        function display(val,i){
+            console.log(val+20+""+i);
+        }
+        arr.forEach(display);
+
+        let res=arr.map((val,i)=>val+10);
+        console.log(res);
+
+        let  res1=arr.filter((val)=>val>0);
+        console.log(res1);
+
+        let res2=arr.reduce((hp,val)=>hp+   val);
+        document.write(res1);
+    </script>
+</body>
+</html>
